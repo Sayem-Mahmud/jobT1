@@ -1,11 +1,9 @@
 import React from 'react';
-// import { Skills, Header, Footer, Work, Testimonial, About } from './container'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.scss';
 import Home from './components/Home/Home';
-// import Work from './container/Work/Work';
 import AllWork from './components/AllWork/AllWork';
-// import { Navbar } from './components';
+
 
 const App = () => {
     return (
@@ -14,7 +12,6 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="work" element={<AllWork />} />
-                    {/* <Route path="*" element={<NotFound />} />  */}
                 </Routes>
             </Router>
         </div>
